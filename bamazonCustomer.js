@@ -37,7 +37,7 @@ function chooseItem() {
   .prompt([
     {
       type: "input",
-      message: "\nPlease enter the number of the item you'd like to purchase. If none, press enter.\n",
+      message: "\nPlease enter the number of the item you'd like to purchase.\n",
       name: "selection"
     }
   ])
