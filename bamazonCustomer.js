@@ -45,6 +45,7 @@ function chooseItem() {
   	itemNum = parseFloat(inquirerResponse.selection);
     if ((itemNum < 1) || (itemNum > 10) || isNaN(itemNum)) {
       console.log("Sorry, your selection does not exist. Goodbye.")
+      connection.end();
     }
     else {
       itemQty();
@@ -65,6 +66,7 @@ function itemQty() {
   	qty = parseFloat(inquirerResponse.count);
     if (isNaN(qty)) {
       console.log("Sorry, you did not enter a valid quantity. Goodbye.")
+      connection.end();
     }
     else {
       purchaseItem();
